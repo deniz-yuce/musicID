@@ -1,13 +1,60 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&display=swap");
+
+/* * {
+  font-family: 'Overpass', sans-serif;
+} */
+.bg-main-desktop {
+  background: linear-gradient(
+    243.88deg,
+    rgba(0, 187, 249, 0.8) 0.45%,
+    rgba(155, 93, 229, 0.8) 47.65%,
+    rgba(222, 77, 134, 0.8) 99%
+  );
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.bg-playlist-1 {
+  background: linear-gradient(
+    0deg,
+    rgba(252, 176, 180, 0.929871) 0%,
+    rgba(252, 176, 180, 0.649885) 20.87%,
+    rgba(252, 176, 180, 0.464333) 34.19%,
+    rgba(188, 204, 209, 0.09) 100%,
+    rgba(252, 176, 180, 0.09) 100%
+  );
+}
+
+.bg-playlist-2 {
+  background: linear-gradient(
+    0deg,
+    rgba(166, 225, 250, 0.929871) 0%,
+    rgba(166, 225, 250, 0.649885) 20.87%,
+    rgba(166, 225, 250, 0.464333) 34.19%,
+    rgba(166, 225, 250, 0.09) 100%
+  );
+}
+
+.bg-playlist-3 {
+  background: linear-gradient(
+    0deg,
+    rgba(152, 245, 225, 0.929871) 0%,
+    rgba(152, 245, 225, 0.649885) 20.87%,
+    rgba(152, 245, 225, 0.464333) 34.19%,
+    rgba(152, 245, 225, 0.09) 100%
+  );
+}
+
+.bg-login {
+  background: rgba(248, 248, 248, 0.75);
+}
+
+.bg-border {
+  border: 1px solid rgba(48, 48, 48, 0.5);
+}
+
+.active-btn {
+  -webkit-appearance: none;
 }
