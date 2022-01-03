@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function LogIn() {
   return (
-    <div className="font-main bg-main-desktop h-screen  grid place-items-center">
+    <div className="font-main bg-main-desktop h-screen grid place-items-center">
       <div className="flex flex-col items-center">
         <Link to="/">
           <div className="flex justify-center">

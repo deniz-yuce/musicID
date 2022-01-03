@@ -58,3 +58,14 @@
 .active-btn {
   -webkit-appearance: none;
 }
+.bg-song {
+  background: rgba(252, 176, 180, 0.1);
+}
+
+.bg-genre {
+  background: rgba(166, 225, 250, 0.1);
+}
+
+.bg-mood {
+  background: rgba(152, 245, 225, 0.1);
+}
