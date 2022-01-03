@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import SignUp from "./Routes/SignUp/signup";
 import LogIn from "./Routes/LogIn/login";
+import Identify from "./Routes/Identify/identify";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 ReactDOM.render(
@@ -12,6 +13,7 @@ ReactDOM.render(
       <Route path="/" element={<App />} />
       <Route path="/signup" element={<SignUp />} />
       <Route path="/login" element={<LogIn />} />
+      <Route path="/identify" element={<Identify />} />
     </Routes>
   </BrowserRouter>,
   document.getElementById("root")

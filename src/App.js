@@ -81,9 +81,11 @@ function App() {
               <p className="mb-4 md:mb-6 text-blue-200 font-semibold mt-2 lg:text-2xl lg:mb-4">
                 Choose to you liking
               </p>
-              <button className="bg-projWhite text-blue-400 font-extrabold text-md rounded-lg pt-1 w-28 h-8 xl:h-12 xl:pt-0">
-                <p className="lg:text-xl lg:mb-4 xl:mb-0">Identify</p>
-              </button>
+              <Link to="/identify">
+                <button className="bg-projWhite text-blue-400 font-extrabold text-md rounded-lg pt-1 w-28 h-8 xl:h-12 xl:pt-0">
+                  <p className="lg:text-xl lg:mb-4 xl:mb-0">Identify</p>
+                </button>
+              </Link>
             </div>
           </div>
         </div>
