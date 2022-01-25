@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 export default function GenreSearch() {
   return (
-    <div className="font-main bg-genre h-screen flex flex-col justify-between">
+    <div className="font-main bg-white">
       <div>
         <Link to="/">
           <img
@@ -39,7 +39,7 @@ export default function GenreSearch() {
           </Link>
         </div>
       </div>
-      <div className="bg-black h-12"></div>
+      <div className="bg-black h-12 mt-24"></div>
     </div>
   );
 }

@@ -69,3 +69,15 @@
 .bg-mood {
   background: rgba(152, 245, 225, 0.1);
 }
+
+/* .arrow {
+  border: solid #303030;
+  border-width: 0 5px 5px 0; top right bottom left border-t-0 border-r-4 border-b-4 border-l-0
+  display: inline-block;
+  padding: 5px;
+}*/
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}

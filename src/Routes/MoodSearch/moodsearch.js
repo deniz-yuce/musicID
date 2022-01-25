@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 export default function MoodSearch() {
   return (
-    <div className="font-main bg-mood h-screen flex flex-col justify-between">
+    <div className="font-main bg-white">
       <div>
         <Link to="/">
           <img
@@ -39,7 +39,7 @@ export default function MoodSearch() {
           </Link>
         </div>
       </div>
-      <div className="bg-black h-12"></div>
+      <div className="bg-black h-12 mt-24"></div>
     </div>
   );
 }

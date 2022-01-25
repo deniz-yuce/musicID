@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 export default function SongResult() {
   return (
-    <div className="font-main bg-genre h-full md:h-screen flex flex-col justify-between">
+    <div className="font-main bg-white">
       <div>
         <Link to="/">
           <img
@@ -29,7 +29,7 @@ export default function SongResult() {
             </p>
           </div>
           <div className="lg:flex lg:justify-between xl:mx-12">
-            <div className="flex flex-col">
+            <div className="flex flex-col lg:mr-24">
               <p className="font-semibold text-lg md:text-xl lg:text-2xl">
                 Songs name:
               </p>
@@ -47,16 +47,16 @@ export default function SongResult() {
               <p className="mt-3 lg:mt-7 md:text-lg lg:text-xl lg:pr-24">
                 You can the song using our methods:
               </p>
-              <Link
-                to="/songSearch"
-                className="mt-6 lg:mt-16 lg:pr-24 flex justify-center"
-              >
-                <img
-                  src={findSong}
-                  className="w-5/6 md:w-2/5 lg:w-4/6"
-                  alt="findGenre"
-                />
-              </Link>
+              <div className="flex">
+                <h3 className="font-bold text-lg md:text-xl lg:text-2xl mt-8">
+                  Search for a Song:
+                </h3>
+                <Link to="/songSearch" className="ml-2 mt-1">
+                  <div class="border-4 border-black hover:border-pink rounded-full h-9 w-9 flex items-center justify-center my-6">
+                    <i class="right border-solid border-black hover:border-pink border-t-0 border-r-4 border-b-4 border-l-0 inline-block p-1"></i>
+                  </div>
+                </Link>
+              </div>
             </div>
             <div className="flex flex-col mt-8 lg:mt-0">
               <p className="font-semibold text-lg md:text-xl md:w-2/5">
@@ -76,21 +76,21 @@ export default function SongResult() {
               <p className="mt-3 lg:mt-7 md:text-lg lg:text-xl lg:pr-24">
                 You can find its mood by using our methods:
               </p>
-              <Link
-                to="/moodSearch"
-                className="mt-6 lg:mt-16 lg:pr-24 flex justify-center"
-              >
-                <img
-                  src={findMood}
-                  className="w-5/6 md:w-2/5 lg:w-4/6"
-                  alt="findMood"
-                />
-              </Link>
+              <div className="flex">
+                <h3 className="font-bold text-lg md:text-xl lg:text-2xl mt-8">
+                  Search for a Songs Mood:
+                </h3>
+                <Link to="/moodSearch" className="ml-2 mt-1">
+                  <div class="border-4 border-black hover:border-green rounded-full h-9 w-9 flex items-center justify-center my-6">
+                    <i class="right border-solid border-black hover:border-green border-t-0 border-r-4 border-b-4 border-l-0 inline-block p-1"></i>
+                  </div>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="bg-black h-12 mt-16"></div>
+      <div className="bg-black h-12 mt-24"></div>
     </div>
   );
 }
