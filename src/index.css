@@ -16,6 +16,17 @@
   );
 }
 
+.gradient {
+  background: linear-gradient(
+    243.88deg,
+    rgba(0, 187, 249, 0.8) 0.45%,
+    rgba(155, 93, 229, 0.8) 47.65%,
+    rgba(222, 77, 134, 0.8) 99%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .bg-playlist-1 {
   background: linear-gradient(
     0deg,
@@ -57,17 +68,6 @@
 
 .active-btn {
   -webkit-appearance: none;
-}
-.bg-song {
-  background: rgba(252, 176, 180, 0.1);
-}
-
-.bg-genre {
-  background: rgba(166, 225, 250, 0.1);
-}
-
-.bg-mood {
-  background: rgba(152, 245, 225, 0.1);
 }
 
 /* .arrow {

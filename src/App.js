@@ -90,7 +90,7 @@ function App() {
           </div>
         </div>
 
-        <div className="lg:flex xl:w-7/12">
+        <div className="lg:flex xl:w-8/12">
           <div className="bg-playlist-1 rounded-lg bg-no-repeat mx-12 lg:mx-6 mb-24 lg:mb-16 pb-0.5">
             <div className="relative">
               <img src={playlistImg1} className="md:w-full" alt="playButton" />

@@ -1,13 +1,12 @@
 import React from "react";
 import logo from "../Images/Logo.svg";
-import findGenre from "./FindGenre.svg";
-import findMood from "./FindMood.svg";
 import OR from "../Images/OR.svg";
+import arrow from "../Images/arrow_right.svg";
 import { Link } from "react-router-dom";
 
 export default function SongResult() {
   return (
-    <div className="font-main bg-white">
+    <div className="font-main bg-projWhite">
       <div>
         <Link to="/">
           <img
@@ -47,19 +46,24 @@ export default function SongResult() {
               <p className="mt-3 lg:mt-7 md:text-lg lg:text-xl lg:pr-24">
                 You can find its genre by using our methods:
               </p>
-              <div className="flex">
-                <h3 className="font-bold text-lg md:text-xl lg:text-2xl mt-8">
+              <div className="">
+                <h3 className="font-bold text-lg md:text-xl lg:text-2xl my-8">
                   Search for a Songs Genre:
                 </h3>
-                <Link to="/genreSearch" className="ml-2 mt-1">
-                  <div class="border-4 border-black hover:border-blue-100 rounded-full h-9 w-9 flex items-center justify-center my-6">
-                    <i class="right border-solid border-black hover:border-blue-100 border-t-0 border-r-4 border-b-4 border-l-0 inline-block p-1"></i>
-                  </div>
+                <Link to="/genreSearch">
+                  <button className="bg-main-desktop rounded-lg mb-8 w-28 md:w-32 h-18 lg:h-14 xl:h-12 flex justify-center items-center drop-shadow-xl">
+                    <div className="flex md:ml-2">
+                      <p className="text-projWhite font-bold text-md md:text-xl align-middle mt-0.5 lg:text-2xl xl:text-xl">
+                        Search
+                      </p>
+                      <img src={arrow} className="" alt="arrom" />
+                    </div>
+                  </button>
                 </Link>
               </div>
             </div>
             <div className="flex flex-col mt-8 lg:mt-0">
-              <p className="font-semibold text-lg md:text-xl md:w-2/5">
+              <p className="font-semibold text-lg md:text-xl lg:text-2xl">
                 Songs mood:
               </p>
               <p
@@ -76,14 +80,19 @@ export default function SongResult() {
               <p className="mt-3 lg:mt-7 md:text-lg lg:text-xl lg:pr-24">
                 You can find its mood by using our methods:
               </p>
-              <div className="flex">
-                <h3 className="font-bold text-lg md:text-xl lg:text-2xl mt-8">
-                  Search for a Songs Genre:
+              <div className="">
+                <h3 className="font-bold text-lg md:text-xl lg:text-2xl my-8">
+                  Search for a Songs Mood:
                 </h3>
-                <Link to="/moodSearch" className="ml-2 mt-1">
-                  <div class="border-4 border-black hover:border-green rounded-full h-9 w-9 flex items-center justify-center my-6">
-                    <i class="right border-solid border-black hover:border-green border-t-0 border-r-4 border-b-4 border-l-0 inline-block p-1"></i>
-                  </div>
+                <Link to="/moodSearch">
+                  <button className="bg-main-desktop rounded-lg mb-8 w-28 md:w-32 h-18 lg:h-14 xl:h-12 flex justify-center items-center drop-shadow-xl">
+                    <div className="flex md:ml-2">
+                      <p className="text-projWhite font-bold text-md md:text-xl align-middle mt-0.5 lg:text-2xl xl:text-xl">
+                        Search
+                      </p>
+                      <img src={arrow} className="" alt="arrom" />
+                    </div>
+                  </button>
                 </Link>
               </div>
             </div>

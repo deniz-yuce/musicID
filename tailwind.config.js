@@ -21,6 +21,13 @@ module.exports = {
       purple: "rgba(0, 0, 185, 0.5)",
       pink: "#FCB0B4",
       green: "#98F5E1",
+      // backgroundColors: {
+      //   red: '#f00',
+      //   'red-10': 'rgba(255, 0, 0, 0.1)',
+      //   'red-20': 'rgba(255, 0, 0, 0.2)',
+      //   'red-50': 'rgba(255, 0, 0, 0.5)',
+      //   'red-80': 'rgba(255, 0, 0, 0.8)'
+      // },
     },
     fontFamily: {
       main: ["Overpass"],
