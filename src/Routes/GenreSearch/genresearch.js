@@ -35,7 +35,7 @@ export default function GenreSearch() {
             />
           </div>
           <div className="my-10 md:my-16">
-            <p className="font-bold mb-2 md:text-xl lg:text-2xl">Loaded:</p>
+            <p className="underline mb-2 md:text-xl lg:text-2xl">Loaded:</p>
             <p id="loaded" className="md:text-xl lg:text-2xl">
               Ed Sheeran -Perfect.mp3
             </p>

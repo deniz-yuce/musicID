@@ -17,7 +17,7 @@ export default function SongResult() {
         </Link>
         <div className="mx-12 md:mx-24 xl:mx-80 mt-16 lg:mt-32 xl:mt-24">
           <div className="flex flex-col mb-12 lg:mb-24 xl:mb-36">
-            <p className="font-semibold text-lg md:text-xl lg:text-2xl">
+            <p className="underline text-lg md:text-xl lg:text-2xl">
               Songs genre:
             </p>
             <p
@@ -29,12 +29,10 @@ export default function SongResult() {
           </div>
           <div className="lg:flex lg:justify-between xl:mx-12">
             <div className="flex flex-col lg:mr-24">
-              <p className="font-semibold text-lg md:text-xl lg:text-2xl">
-                Songs name:
-              </p>
+              <p className="text-lg md:text-xl lg:text-2xl">Songs name:</p>
               <p
                 id="songName"
-                className="font-extrabold text-xl md:text-2xl lg:text-3xl mt-4 lg:mt-10"
+                className="font-bold text-xl md:text-2xl lg:text-3xl mt-4 lg:mt-10"
               >
                 Name
               </p>
@@ -47,7 +45,7 @@ export default function SongResult() {
                 You can the song using our methods:
               </p>
               <div className="">
-                <h3 className="font-bold text-lg md:text-xl lg:text-2xl my-8">
+                <h3 className="text-lg md:text-xl lg:text-2xl my-8">
                   Search for a Song:
                 </h3>
                 <Link to="/songSearch">
@@ -68,7 +66,7 @@ export default function SongResult() {
               </p>
               <p
                 id="songMood"
-                className="font-extrabold text-xl md:text-2xl lg:text-3xl mt-4 lg:mt-10"
+                className="font-bold text-xl md:text-2xl lg:text-3xl mt-4 lg:mt-10"
               >
                 Mood
               </p>
@@ -81,7 +79,7 @@ export default function SongResult() {
                 You can find its mood by using our methods:
               </p>
               <div className="">
-                <h3 className="font-bold text-lg md:text-xl lg:text-2xl my-8">
+                <h3 className="text-lg md:text-xl lg:text-2xl my-8">
                   Search for a Songs Mood:
                 </h3>
                 <Link to="/moodSearch">

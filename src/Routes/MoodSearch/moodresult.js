@@ -17,7 +17,7 @@ export default function SongResult() {
         </Link>
         <div className="mx-12 md:mx-24 xl:mx-80 mt-16 lg:mt-32 xl:mt-24">
           <div className="flex flex-col mb-12 lg:mb-24 xl:mb-36">
-            <p className="font-semibold text-lg md:text-xl lg:text-2xl">
+            <p className="underline text-lg md:text-xl lg:text-2xl">
               Songs mood:
             </p>
             <p
@@ -34,7 +34,7 @@ export default function SongResult() {
               </p>
               <p
                 id="songName"
-                className="font-extrabold text-xl md:text-2xl lg:text-3xl mt-4 lg:mt-10"
+                className="font-bold text-xl md:text-2xl lg:text-3xl mt-4 lg:mt-10"
               >
                 Name
               </p>
@@ -47,7 +47,7 @@ export default function SongResult() {
                 You can the song using our methods:
               </p>
               <div className="">
-                <h3 className="font-bold text-lg md:text-xl lg:text-2xl my-8">
+                <h3 className="text-lg md:text-xl lg:text-2xl my-8">
                   Search for a Song:
                 </h3>
                 <Link to="/genreSearch">
@@ -68,7 +68,7 @@ export default function SongResult() {
               </p>
               <p
                 id="songGenre"
-                className="font-extrabold text-xl md:text-2xl lg:text-3xl mt-4 lg:mt-10"
+                className="font-bold text-xl md:text-2xl lg:text-3xl mt-4 lg:mt-10"
               >
                 Genre
               </p>
@@ -81,7 +81,7 @@ export default function SongResult() {
                 You can find its genre by using our methods:
               </p>
               <div className="">
-                <h3 className="font-bold text-lg md:text-xl lg:text-2xl my-8">
+                <h3 className="text-lg md:text-xl lg:text-2xl my-8">
                   Search for a Songs Genre:
                 </h3>
                 <Link to="/genreSearch">
