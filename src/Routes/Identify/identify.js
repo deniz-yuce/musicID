@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function Identify() {
   return (
-    <div className="font-main bg-projWhite ">
+    <div className="font-main pb-20">
       <div className="">
         <Link to="/">
           <img
@@ -81,7 +81,7 @@ export default function Identify() {
           </div>
         </div>
       </div>
-      <div className="bg-black h-16"></div>
+      {/* <div className="bg-black h-16"></div> */}
     </div>
   );
 }

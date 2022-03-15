@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 export default function SongResult() {
   return (
-    <div className="font-main bg-projWhite">
+    <div className="font-main">
       <div>
         <Link to="/">
           <img
@@ -15,7 +15,7 @@ export default function SongResult() {
             alt="Logo"
           />
         </Link>
-        <div className="mx-12 md:mx-24 xl:mx-80 mt-16 lg:mt-32 xl:mt-24">
+        <div className="mx-12 md:mx-24 xl:mx-80 mt-16 lg:mt-32 xl:mt-24 pb-20">
           <div className="flex flex-col mb-12 lg:mb-24 xl:mb-36">
             <p className="underline text-lg md:text-xl lg:text-2xl">
               Found song:
@@ -95,7 +95,7 @@ export default function SongResult() {
           </div>
         </div>
       </div>
-      <div className="bg-black h-12 mt-24"></div>
+      {/* <div className="bg-black h-12 mt-24"></div> */}
     </div>
   );
 }
