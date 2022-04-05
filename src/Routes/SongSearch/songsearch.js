@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import logo from "../Images/Logo.svg";
-import file from "../Images/File.svg";
 import mic from "../Images/Mic.svg";
 import { Link } from "react-router-dom";
+import { WaveSpinner, DominoSpinner } from "react-spinners-kit";
 import axios from "axios";
 
 export default function SongSearch() {
@@ -12,9 +12,12 @@ export default function SongSearch() {
 
   const [isAnalyze, setAnalyze] = useState(false);
 
+  const [disable, setDisable] = useState(false);
+
   const handleClick = async () => {
     setData("");
     setIsLoading(true);
+    setDisable(true);
     setTimeout(() => {
       setAnalyze(true);
       setIsLoading(false);
@@ -28,6 +31,7 @@ export default function SongSearch() {
       console.log(err);
     } finally {
       setAnalyze(false);
+      setDisable(false);
     }
   };
 
@@ -62,13 +66,18 @@ export default function SongSearch() {
             />
           </div> */}
           <div className="flex mt-8 md:mt-12 lg:mt-16">
-            <button onClick={handleClick}>
+            <button onClick={handleClick} disabled={disable}>
               <img src={mic} className="w-full drop-shadow-xl" alt="mic" />
             </button>
           </div>
-          <div className="my-10 md:my-16">
+          <div className="my-10 md:my-16 flex flex-col">
             {/* <p className="underline mb-2 md:text-xl lg:text-2xl">Loaded:</p> */}
-            <p id="loading" className="md:text-xl lg:text-2xl">
+            <WaveSpinner size={40} color="#303030" loading={isLoading} />
+            <DominoSpinner size={100} color="#303030" loading={isAnalyze} />
+            <p
+              id="loading"
+              className="flex items-center md:text-xl lg:text-2xl mt-6"
+            >
               {isLoading ? "Listening..." : ""}
               {isAnalyze ? "Analyzing..." : ""}
             </p>

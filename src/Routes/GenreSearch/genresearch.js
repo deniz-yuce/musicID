@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import logo from "../Images/Logo.svg";
 import mic from "../Images/Mic.svg";
 import { Link } from "react-router-dom";
+import { WaveSpinner, DominoSpinner } from "react-spinners-kit";
 import axios from "axios";
 
 export default function GenreSearch() {
@@ -11,9 +12,12 @@ export default function GenreSearch() {
 
   const [isAnalyze, setAnalyze] = useState(false);
 
+  const [disable, setDisable] = useState(false);
+
   const handleClick = async () => {
     setData("");
     setIsLoading(true);
+    setDisable(true);
     setTimeout(() => {
       setAnalyze(true);
       setIsLoading(false);
@@ -31,6 +35,7 @@ export default function GenreSearch() {
       console.log(err);
     } finally {
       setAnalyze(false);
+      setDisable(false);
     }
   };
 
@@ -52,12 +57,17 @@ export default function GenreSearch() {
             Listen for audio:
           </p>
           <div className="flex mt-8 md:mt-12 lg:mt-16">
-            <button onClick={handleClick}>
+            <button onClick={handleClick} disabled={disable}>
               <img src={mic} className="w-full drop-shadow-xl" alt="mic" />
             </button>
           </div>
-          <div className="my-10 md:my-16">
-            <p id="loadingGenre" className="md:text-xl lg:text-2xl">
+          <div className="my-10 md:my-16 flex flex-col ">
+            <WaveSpinner size={40} color="#303030" loading={isLoading} />
+            <DominoSpinner size={100} color="#303030" loading={isAnalyze} />
+            <p
+              id="loadingGenre"
+              className="flex items-center md:text-xl lg:text-2xl"
+            >
               {isLoading ? "Listening..." : ""}
               {isAnalyze ? "Analyzing..." : ""}
             </p>

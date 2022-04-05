@@ -3,6 +3,7 @@ import logo from "../Images/Logo.svg";
 import happy from "../Images/happy.png";
 import sad from "../Images/sad.png";
 import { Link } from "react-router-dom";
+import { DominoSpinner } from "react-spinners-kit";
 import axios from "axios";
 
 export default function MoodSearch() {
@@ -13,6 +14,8 @@ export default function MoodSearch() {
 
   const [isAnalyze, setAnalyze] = useState(false);
 
+  const [disable, setDisable] = useState(false);
+
   const handleClick = async () => {
     let sarki = document.getElementById("sarki").value;
     let data = {};
@@ -20,6 +23,7 @@ export default function MoodSearch() {
     setHappyStyle("opacity-20");
     setSadStyle("opacity-20");
     setAnalyze(true);
+    setDisable(true);
     try {
       const response = await axios.post("http://127.0.0.1:5000/sarki", {
         sarki,
@@ -35,6 +39,7 @@ export default function MoodSearch() {
       console.log(err);
     } finally {
       setAnalyze(false);
+      setDisable(false);
     }
   };
 
@@ -67,6 +72,7 @@ export default function MoodSearch() {
           <div to="/moodResult" className="mt-10">
             <button
               onClick={handleClick}
+              disabled={disable}
               className="bg-main-desktop text-projWhite font-semibold text-md md:text-xl rounded-lg w-28 md:w-36 h-8 md:h-10 xl:h-12 xl:pt-0 drop-shadow-xl"
             >
               <p className="md:text-xl xl:mb-0">Identify</p>
@@ -74,9 +80,16 @@ export default function MoodSearch() {
           </div>
         </div>
         <div className="my-8">
-          <p id="loading" className="mb-10 text-center md:text-xl lg:text-2xl">
-            {isAnalyze ? "Analyzing..." : ""}
-          </p>
+          <div className="flex flex-col items-center">
+            <DominoSpinner size={100} color="#303030" loading={isAnalyze} />
+            <p
+              id="loading"
+              className="flex items-center mb-10 text-center md:text-xl lg:text-2xl"
+            >
+              {isAnalyze ? "Analyzing..." : ""}
+            </p>
+          </div>
+
           <div className="flex justify-around md:mx-44 lg:mx-72 xl:mx-96">
             <div id="happy" className="flex flex-col">
               <img src={happy} className={happyStyle} alt="happy" />

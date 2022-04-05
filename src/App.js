@@ -81,16 +81,21 @@ function App() {
               <p className="mb-4 md:mb-6 text-blue-200 font-semibold mt-2 lg:text-2xl lg:mb-4">
                 Choose to you liking
               </p>
-              <Link to="/identify">
-                <button className="bg-projWhite text-blue-400 font-extrabold text-md rounded-lg pt-1 w-28 h-8 xl:h-12 xl:pt-0">
-                  <p className="lg:text-xl lg:mb-4 xl:mb-0">Identify</p>
-                </button>
-              </Link>
+              <div className="flex">
+                <Link to="/signup">
+                  <button className="bg-projWhite text-blue-400 font-extrabold text-md rounded-lg pt-1 w-28 h-8 xl:h-12 xl:pt-0">
+                    <p className="lg:text-xl lg:mb-4 xl:mb-0">Identify</p>
+                  </button>
+                </Link>
+                <div className="flex items-center">
+                  <p className="ml-4 text-projWhite">Login to search...</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="lg:flex xl:w-8/12">
+        <div className="lg:flex xl:w-10/12">
           <div className="bg-playlist-1 rounded-lg bg-no-repeat mx-12 lg:mx-6 mb-24 lg:mb-16 pb-0.5">
             <div className="relative">
               <img src={playlistImg1} className="md:w-full" alt="playButton" />
@@ -107,24 +112,24 @@ function App() {
               </p>
               <div className="text-black font-bold text-md mt-6 mb-10">
                 <div className="grid grid-cols-2 gap-2 border-b-2 border-black mt-3 items-center">
-                  <p>Adele</p>
-                  <p>Easy On Me</p>
+                  <p>Coldplay</p>
+                  <p>Clocks</p>
                 </div>
                 <div className="grid grid-cols-2 gap-2 border-b-2 border-black mt-3 items-center">
-                  <p>Alec Benjamin</p>
-                  <p>Demons</p>
+                  <p>Hayko Cepkin</p>
+                  <p>Ölüyorum</p>
                 </div>
                 <div className="grid grid-cols-2 gap-2 border-b-2 border-black mt-3 items-center">
-                  <p>Ed Sheeran</p>
-                  <p>Perfect</p>
+                  <p>Sia</p>
+                  <p>Unstoppable</p>
                 </div>
                 <div className="grid grid-cols-2 gap-2 border-b-2 border-black mt-3 items-center">
-                  <p>LISA</p>
-                  <p>Money</p>
+                  <p>Imagine DragonsxJID</p>
+                  <p>Enemy</p>
                 </div>
                 <div className="grid grid-cols-2 gap-2 border-b-2 border-black mt-3 items-center">
-                  <p>Glass Animals</p>
-                  <p>Heat Waves</p>
+                  <p>Mozart</p>
+                  <p>Lacrimosa</p>
                 </div>
               </div>
             </div>
@@ -140,30 +145,32 @@ function App() {
               </div>
             </div>
             <div className="mx-9 mt-8">
-              <h2 className="text-black text-3xl font-extrabold">Songs</h2>
+              <h2 className="text-black text-3xl font-extrabold">
+                Genre Songs
+              </h2>
               <p className="text-black font-medium text-base mt-2">
                 You can find our collection of songs in this playlist
               </p>
               <div className="text-black font-bold text-md mt-6 mb-10">
                 <div className="grid grid-cols-2 gap-2 border-b-2 border-black mt-3 items-center">
-                  <p>Adele</p>
-                  <p>Easy On Me</p>
-                </div>
-                <div className="grid grid-cols-2 gap-2 border-b-2 border-black mt-3 items-center">
-                  <p>Alec Benjamin</p>
-                  <p>Demons</p>
-                </div>
-                <div className="grid grid-cols-2 gap-2 border-b-2 border-black mt-3 items-center">
                   <p>Ed Sheeran</p>
                   <p>Perfect</p>
                 </div>
                 <div className="grid grid-cols-2 gap-2 border-b-2 border-black mt-3 items-center">
-                  <p>LISA</p>
-                  <p>Money</p>
+                  <p>Edvard Grieg</p>
+                  <p>Peer Gynt</p>
                 </div>
                 <div className="grid grid-cols-2 gap-2 border-b-2 border-black mt-3 items-center">
-                  <p>Glass Animals</p>
-                  <p>Heat Waves</p>
+                  <p>Antonio Vivaldi</p>
+                  <p>The Four Seasons</p>
+                </div>
+                <div className="grid grid-cols-2 gap-2 border-b-2 border-black mt-3 items-center">
+                  <p>Ed Sheeran</p>
+                  <p>Bad Habits</p>
+                </div>
+                <div className="grid grid-cols-2 gap-2 border-b-2 border-black mt-3 items-center">
+                  <p>Selena Gomez</p>
+                  <p>Wolfs</p>
                 </div>
               </div>
             </div>
@@ -179,30 +186,30 @@ function App() {
               </div>
             </div>
             <div className="mx-9 mt-8">
-              <h2 className="text-black text-3xl font-extrabold">Songs</h2>
+              <h2 className="text-black text-3xl font-extrabold">Mood Songs</h2>
               <p className="text-black font-medium text-base mt-2">
                 You can find our collection of songs in this playlist
               </p>
               <div className="text-black font-bold text-md mt-6 mb-10">
                 <div className="grid grid-cols-2 gap-2 border-b-2 border-black mt-3 items-center">
-                  <p>Adele</p>
-                  <p>Easy On Me</p>
+                  <p>Pharrell Williams</p>
+                  <p>Happy</p>
                 </div>
                 <div className="grid grid-cols-2 gap-2 border-b-2 border-black mt-3 items-center">
-                  <p>Alec Benjamin</p>
-                  <p>Demons</p>
+                  <p>Justin Bieber</p>
+                  <p>Ghost</p>
                 </div>
                 <div className="grid grid-cols-2 gap-2 border-b-2 border-black mt-3 items-center">
                   <p>Ed Sheeran</p>
                   <p>Perfect</p>
                 </div>
                 <div className="grid grid-cols-2 gap-2 border-b-2 border-black mt-3 items-center">
-                  <p>LISA</p>
-                  <p>Money</p>
+                  <p>Risa</p>
+                  <p>Gone</p>
                 </div>
                 <div className="grid grid-cols-2 gap-2 border-b-2 border-black mt-3 items-center">
-                  <p>Glass Animals</p>
-                  <p>Heat Waves</p>
+                  <p>Red Velvet</p>
+                  <p>Happiness</p>
                 </div>
               </div>
             </div>
