@@ -34,7 +34,7 @@ export default function LogIn() {
       <div className="flex flex-col items-center">
         <Link to="/">
           <div className="flex justify-center">
-            <img src={logo} className="w-4/5 mb-12" alt="Logo" />
+            <img src={logo} className="w-4/5 my-12" alt="Logo" />
           </div>
         </Link>
         <div className="bg-login p-12 mb-36 flex flex-col rounded-xl lg:p-20 xl:p-16">
@@ -51,7 +51,7 @@ export default function LogIn() {
             type="text"
             id="email"
             placeholder="  example@mail.com"
-            className="bg-border bbg-login mb-6 rounded-lg text-xl md:text-2xl lg:text-2xl focus:outline focus:outline-1 focus:outline-purple focus:shadow-md focus:shadow-purple"
+            className="bg-border bg-login p-2 mb-6 rounded-lg text-xl md:text-2xl lg:text-2xl focus:outline focus:outline-1 focus:outline-purple focus:shadow-md focus:shadow-purple"
           ></input>
           <label
             for="password"
@@ -64,7 +64,7 @@ export default function LogIn() {
             id="password"
             placeholder=""
             // className="bg-border mb-12 focus:shadow-lg focus:shadow-purple"
-            className="bg-border bg-login mb-2 rounded-lg text-xl md:text-2xl lg:text-2xl focus:outline focus:outline-1 focus:outline-purple focus:shadow-md focus:shadow-purple"
+            className="bg-border bg-login p-2 mb-2 rounded-lg text-xl md:text-2xl lg:text-2xl focus:outline focus:outline-1 focus:outline-purple focus:shadow-md focus:shadow-purple"
           ></input>
           <p
             id="wrongPass"
@@ -74,7 +74,7 @@ export default function LogIn() {
           </p>
           <button
             onClick={handleClick}
-            className="bg-main-desktop text-projWhite font-medium xl:font-semibold text-xl md:text-2xl lg:text-3xl xl:text-2xl py-1.5 rounded-lg shadow-md"
+            className="bg-main-desktop p-2 text-projWhite font-medium xl:font-semibold text-xl md:text-2xl lg:text-3xl xl:text-2xl py-1.5 rounded-lg shadow-md"
           >
             Log In
           </button>

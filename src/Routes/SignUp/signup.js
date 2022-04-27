@@ -41,7 +41,7 @@ export default function SignUp() {
       <div className="flex flex-col items-center">
         <Link to="/">
           <div className="flex justify-center">
-            <img src={logo} className="w-4/5 mb-12" alt="Logo" />
+            <img src={logo} className="w-4/5 my-12" alt="Logo" />
           </div>
         </Link>
         <div className="bg-login p-12 flex flex-col rounded-xl sm:my-5">
@@ -57,7 +57,7 @@ export default function SignUp() {
           <input
             type="text"
             id="name"
-            className="bg-border bbg-login mb-6 rounded-lg text-xl md:text-2xl lg:text-2xl focus:outline focus:outline-1 focus:outline-purple focus:shadow-md focus:shadow-purple"
+            className="bg-border bg-login p-2 mb-6 rounded-lg text-xl md:text-2xl lg:text-2xl focus:outline focus:outline-1 focus:outline-purple focus:shadow-md focus:shadow-purple"
           ></input>
           <label
             for="surname"
@@ -68,7 +68,7 @@ export default function SignUp() {
           <input
             type="text"
             id="surname"
-            className="bg-border bbg-login mb-6 rounded-lg text-xl md:text-2xl lg:text-2xl focus:outline focus:outline-1 focus:outline-purple focus:shadow-md focus:shadow-purple"
+            className="bg-border bg-login p-2 mb-6 rounded-lg text-xl md:text-2xl lg:text-2xl focus:outline focus:outline-1 focus:outline-purple focus:shadow-md focus:shadow-purple"
           ></input>
           <label
             for="email"
@@ -80,7 +80,7 @@ export default function SignUp() {
             type="text"
             id="email"
             placeholder="  example@mail.com"
-            className="bg-border bbg-login mb-6 rounded-lg text-xl md:text-2xl lg:text-2xl focus:outline focus:outline-1 focus:outline-purple focus:shadow-md focus:shadow-purple"
+            className="bg-border bg-login p-2 mb-6 rounded-lg text-xl md:text-2xl lg:text-2xl focus:outline focus:outline-1 focus:outline-purple focus:shadow-md focus:shadow-purple"
           ></input>
           <label
             for="password"
@@ -93,7 +93,7 @@ export default function SignUp() {
             id="password"
             placeholder=""
             // className="bg-border mb-12 focus:shadow-lg focus:shadow-purple"
-            className="bg-border bg-login mb-12 rounded-lg text-xl md:text-2xl lg:text-2xl focus:outline focus:outline-1 focus:outline-purple focus:shadow-md focus:shadow-purple"
+            className="bg-border bg-login p-2 mb-12 rounded-lg text-xl md:text-2xl lg:text-2xl focus:outline focus:outline-1 focus:outline-purple focus:shadow-md focus:shadow-purple"
           ></input>
           {/* <Link to="/identify"> */}
           <button
@@ -106,7 +106,7 @@ export default function SignUp() {
 
           <Link
             to="/login"
-            className="my-4 text-right underline underline-offset-2 text-purple font-semibold md:text-lg lg:text-xl xl:text-lg"
+            className="my-4 p-2 text-right underline underline-offset-2 text-purple font-semibold md:text-lg lg:text-xl xl:text-lg"
           >
             Already have an account?
           </Link>
