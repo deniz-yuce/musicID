@@ -11,6 +11,7 @@ import GenreSearch from "./Routes/GenreSearch/genresearch";
 import GenreResult from "./Routes/GenreSearch/genreresult";
 import MoodSearch from "./Routes/MoodSearch/moodsearch";
 import MoodResult from "./Routes/MoodSearch/moodresult";
+import SearchAll from "./Routes/SearchAll/searchall";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 ReactDOM.render(
@@ -26,6 +27,7 @@ ReactDOM.render(
       <Route path="/genreResult" element={<GenreResult />} />
       <Route path="/moodSearch" element={<MoodSearch />} />
       <Route path="/moodResult" element={<MoodResult />} />
+      <Route path="/searchAll" element={<SearchAll />} />
     </Routes>
   </BrowserRouter>,
   document.getElementById("root")

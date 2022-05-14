@@ -82,7 +82,7 @@ function App() {
                 Choose to you liking
               </p>
               <div className="flex">
-                <Link to="/signup">
+                <Link to="/searchAll">
                   <button className="bg-projWhite text-blue-400 font-extrabold text-md rounded-lg pt-1 w-28 h-8 xl:h-12 xl:pt-0">
                     <p className="lg:text-xl lg:mb-4 xl:mb-0">Identify</p>
                   </button>

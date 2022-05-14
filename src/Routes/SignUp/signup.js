@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import logo from "../../Images/MobileLogo.svg";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -89,7 +88,7 @@ export default function SignUp() {
             Password:
           </label>
           <input
-            type="text"
+            type="password"
             id="password"
             placeholder=""
             // className="bg-border mb-12 focus:shadow-lg focus:shadow-purple"

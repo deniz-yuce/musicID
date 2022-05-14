@@ -58,7 +58,7 @@ export default function MoodSearch() {
             Search for a songs mood
           </p>
           <p className="font-bold text-lg md:text-2xl lg:text-3xl mt-10 md:mt-16 lg:mt-10 mx-10 text-center">
-            Upload a music text file containing lyrics:
+            Enter a songs' lyrics:
           </p>
           <div className="flex justify-between md:gap-16 mt-8 md:mt-12 lg:mt-12">
             <textarea

@@ -19,7 +19,8 @@ export default function LogIn() {
         user,
       });
       console.log(response.data);
-      if (response.data.flag == 1) {
+      if (response.data.flag === 1) {
+        //KONTROL ET DB İLE == İKEN === YAPTIM
         navigate("/identify");
       } else {
         setWrongPass("*Wrong email or password");
@@ -60,7 +61,7 @@ export default function LogIn() {
             Password:
           </label>
           <input
-            type="text"
+            type="password"
             id="password"
             placeholder=""
             // className="bg-border mb-12 focus:shadow-lg focus:shadow-purple"
