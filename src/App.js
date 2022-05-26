@@ -21,7 +21,7 @@ function App() {
             alt="Logo"
           />
         </Link>
-        <Link to="/signup">
+        {/* <Link to="/signup">
           <button className="bg-white-bg rounded-lg w-28 md:w-32 h-18 lg:h-14 xl:h-12 flex justify-center items-center">
             <div className="flex md:ml-2">
               <p className="text-projWhite font-bold text-md md:text-xl align-middle mt-0.5 lg:text-2xl xl:text-xl">
@@ -30,7 +30,7 @@ function App() {
               <img src={arrow} className="" alt="arrom" />
             </div>
           </button>
-        </Link>
+        </Link> */}
       </div>
 
       <div className="flex xl:ml-24">
@@ -87,15 +87,15 @@ function App() {
                     <p className="lg:text-xl lg:mb-4 xl:mb-0">Identify</p>
                   </button>
                 </Link>
-                <div className="flex items-center">
+                {/* <div className="flex items-center">
                   <p className="ml-4 text-projWhite">Login to search...</p>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
         </div>
 
-        <div className="lg:flex xl:w-10/12">
+        <div className="lg:flex xl:w-10/12 ">
           <div className="bg-playlist-1 rounded-lg bg-no-repeat mx-12 lg:mx-6 mb-24 lg:mb-16 pb-0.5">
             <div className="relative">
               <img src={playlistImg1} className="md:w-full" alt="playButton" />

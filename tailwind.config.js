@@ -6,6 +6,9 @@ module.exports = {
         Mmobile: "url('/src/Images/IdentifyMobile.svg')",
         MainPC: "url('/src/Images/IdentifyPC.svg')",
       },
+      rotate: {
+        '25': "25deg",
+      },
     },
     colors: {
       projWhite: "#F8F8F8",

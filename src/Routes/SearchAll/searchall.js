@@ -9,6 +9,7 @@ import { WaveSpinner, DominoSpinner } from "react-spinners-kit";
 
 export default function SearchAll() {
   const [isLoading, setIsLoading] = useState(false);
+  const [flag, setFlag] = useState(false);
   const [isAnalyze, setAnalyze] = useState(false);
   const [disable, setDisable] = useState(false);
   const [identify, setIdentify] = useState(true);
@@ -36,7 +37,7 @@ export default function SearchAll() {
     }
   };
 
-  const handleMic = () => {
+  const handleMic = async () => {
     setIsLoading(true);
     setDisable(true);
     setIdentify(true);
@@ -52,31 +53,32 @@ export default function SearchAll() {
       setDisable(false);
     }, 10000);
 
-    try {
-      axios.post("http://127.0.0.1:5000/getSongGenre").then((res) => {
-        setGenre(res.data.genre);
-      });
-      //.then((res) => res.status === 200 && setAnalyze(false));
-    } catch (err) {
-      //setAnalyze(false);
-      console.log(err);
-    } finally {
-      //setAnalyze(false);
-      console.log("melaba");
-    }
+    const res = await axios.get("http://127.0.0.1:5000/getNeco");
+    console.log(res);
 
-    try {
-      axios.get("http://127.0.0.1:5000/getSong").then((res) => {
-        setSong(res.data);
-        setAnalyze(false);
-        setIdentify(false);
-      });
-      //.then((res) => res.status === 200 && setAnalyze(false));
-    } catch (err) {
-      //setAnalyze(false);
-    } finally {
-      console.log("mal armi");
-    }
+    // try {
+    //   axios.get("http://127.0.0.1:5000/getSong").then((res) => {
+    //     setSong(res.data);
+    //     setAnalyze(false);
+    //     setIdentify(false);
+    //     setFlag(true);
+    //   });
+    // } catch (err) {
+    //   //setAnalyze(false);
+    // } finally {
+    //   console.log("mal armi");
+    // }
+
+    // if (flag) {
+    //   try {
+    //     axios.post("http://127.0.0.1:5000/getSongGenre").then((res) => {
+    //       setGenre(res.data.genre);
+    //     });
+    //   } catch (err) {
+    //     //setAnalyze(false);
+    //     console.log(err);
+    //   }
+    // }
   };
 
   return (

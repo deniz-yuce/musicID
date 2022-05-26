@@ -1,0 +1,23 @@
+.bg-main-desktop {
+  background: linear-gradient(
+    243.88deg,
+    rgba(0, 187, 249, 0.7) 0.45%,
+    rgba(155, 93, 229, 0.7) 47.65%,
+    rgba(222, 77, 134, 0.7) 99%
+  );
+}
+
+
+.content{
+  overflow:hidden;
+  display:-webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+
+}
+
+
+.moo{
+  background: linear-gradient(360deg, #202124 15%, rgba(30, 32,33, 0) 100%);
+}
+
